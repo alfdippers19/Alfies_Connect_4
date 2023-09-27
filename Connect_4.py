@@ -62,7 +62,7 @@ while game_over != True: #Main game loop
     else:
         while done != True:
             column_choice = int(input("Player 2, which row do you choose?: "))
-            if map[5][column_choice] != ' ':
+            if map[5][column_choice] != ' ': # checks if the top of the board is full (cant put any more in)
                 print("This stack is full!")
             else:
                 done = True
